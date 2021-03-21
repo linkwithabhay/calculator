@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./calci.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section class="calci">
+      <div class="calciBody">
+        <div class="calciHeader">
+          <h1><span>Calci</span><span>1st Edition</span></h1>
+          <h1><span>Powered By</span><span>AK &amp; AV</span></h1>
+        </div>
+        <div class="calciDisplay">
+          <span id="displayValues"></span>
+          <span id="displayResult"></span>
+        </div>
+        <div class="calciTypingBody">
+          <div class="calciButtons">
+            <div class="calciButtonsNavigation">
+              <div class="calciButtonsNavigationLeftPart">
+                <div role="button" id="calciShiftBtn"><span>Shift</span></div>
+                <div role="button" id="calciOFFBtn"><span>OFF</span></div>
+              </div>
+              <div class="calciButtonsNavigationCenterPart">
+                <div class="calciButtonsNavigationCenterPartRow">
+                  <div class="col">1</div>
+                </div>
+                <div class="calciButtonsNavigationCenterPartRow">
+                  <div class="col">2</div>
+                  <div class="col">3</div>
+                </div>
+                <div class="calciButtonsNavigationCenterPartRow">
+                  <div class="col">4</div>
+                </div>
+              </div>
+              <div class="calciButtonsNavigationRightPart">
+                <div role="button" id="calciModeBtn"><span>Mode</span></div>
+                <div role="button" id="calciONBtn"><span>ON</span></div>
+                <!-- <div role="button" id="cutBtn">Cut</div> -->
+                <!-- <div role="button" id="cancelBtn">Cancel</div> -->
+              </div>
+            </div>
+            <div class="calciButtonsNumeric"></div>
+            <div class="calciButtonsSigns"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
