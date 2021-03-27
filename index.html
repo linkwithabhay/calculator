@@ -29,29 +29,205 @@
             <div class="calciButtonsNavigation">
               <div class="calciButtonsNavigationLeftPart">
                 <div role="button" id="calciShiftBtn"><span>Shift</span></div>
-                <div role="button" id="calciOFFBtn"><span>OFF</span></div>
+                <!-- <div role="button" id="calciOFFBtn"><span>OFF</span></div> -->
               </div>
-              <div class="calciButtonsNavigationCenterPart">
+              <div jsname="CenterCol" class="calciButtonsNavigationCenterPart">
                 <div class="calciButtonsNavigationCenterPartRow">
-                  <div class="col">1</div>
+                  <div
+                    class="calciButtonsNavigationCenterPartCol"
+                    id="topShifter"
+                  >
+                    <!-- Keyboard_Up_Arrow SVG -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      width="20px"
+                      height="20px"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        stroke="white"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <div class="calciButtonsNavigationCenterPartRow">
-                  <div class="col">2</div>
-                  <div class="col">3</div>
+                  <div
+                    class="calciButtonsNavigationCenterPartCol"
+                    id="leftShifter"
+                  >
+                    <!-- Keyboard_Left_Arrow SVG -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      width="20px"
+                      height="20px"
+                    >
+                      <path d="M0 0h24v24H0V0z" fill="none" />
+                      <path
+                        stroke="white"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="calciButtonsNavigationCenterPartCol"
+                    id="rightShifter"
+                  >
+                    <!-- Keyboard_Right_Arrow SVG -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      width="20px"
+                      height="20px"
+                    >
+                      <path d="M0 0h24v24H0V0z" fill="none" />
+                      <path
+                        stroke="white"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <div class="calciButtonsNavigationCenterPartRow">
-                  <div class="col">4</div>
+                  <div
+                    class="calciButtonsNavigationCenterPartCol"
+                    id="downShifter"
+                  >
+                    <!-- Keyboard_Down_Arrow SVG -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      width="20px"
+                      height="20px"
+                    >
+                      <!-- <path d="M0 0h24v24H0V0z" fill="none" /> -->
+                      <path
+                        stroke="white"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
               <div class="calciButtonsNavigationRightPart">
                 <div role="button" id="calciModeBtn"><span>Mode</span></div>
                 <div role="button" id="calciONBtn"><span>ON</span></div>
-                <!-- <div role="button" id="cutBtn">Cut</div> -->
                 <!-- <div role="button" id="cancelBtn">Cancel</div> -->
               </div>
             </div>
-            <div class="calciButtonsNumeric"></div>
-            <div class="calciButtonsSigns"></div>
+            <div class="calciButtonsNumericAndSigns">
+              <div role="button" display-value="0" class="Item numericItem">
+                <span>0</span>
+              </div>
+              <div
+                role="button"
+                display-value="."
+                class="Item mathExpressionItem"
+              >
+                <span>.</span>
+              </div>
+              <div
+                role="button"
+                display-value="π"
+                class="Item mathExpressionItem"
+              >
+                <span>&pi;</span>
+              </div>
+              <div role="button" id="AnsBtn" class="Item">
+                <span>Ans</span>
+              </div>
+              <div role="button" id="calculateResult" class="Item">
+                <span>=</span>
+              </div>
+              <div role="button" display-value="1" class="Item numericItem">
+                <span>1</span>
+              </div>
+              <div role="button" display-value="2" class="Item numericItem">
+                <span>2</span>
+              </div>
+              <div role="button" display-value="3" class="Item numericItem">
+                <span>3</span>
+              </div>
+              <div
+                role="button"
+                display-value="+"
+                class="Item mathExpressionItem"
+              >
+                <span>+</span>
+              </div>
+              <div
+                role="button"
+                display-value="-"
+                class="Item mathExpressionItem"
+              >
+                <span>&ndash;</span>
+              </div>
+              <div role="button" display-value="4" class="Item numericItem">
+                <span>4</span>
+              </div>
+              <div role="button" display-value="5" class="Item numericItem">
+                <span>5</span>
+              </div>
+              <div role="button" display-value="6" class="Item numericItem">
+                <span>6</span>
+              </div>
+              <div
+                role="button"
+                display-value="×"
+                class="Item mathExpressionItem"
+              >
+                <span>&times;</span>
+              </div>
+              <div
+                role="button"
+                display-value="÷"
+                class="Item mathExpressionItem"
+              >
+                <span>&divide;</span>
+              </div>
+              <div role="button" display-value="7" class="Item numericItem">
+                <span>7</span>
+              </div>
+              <div role="button" display-value="8" class="Item numericItem">
+                <span>8</span>
+              </div>
+              <div role="button" display-value="9" class="Item numericItem">
+                <span>9</span>
+              </div>
+              <div role="button" id="delBtn" class="Item"><span>DEL</span></div>
+              <div
+                role="button"
+                before-content="OFF"
+                id="calciOFFclearBtn"
+                class="Item"
+              >
+                <span>AC</span>
+              </div>
+            </div>
+            <!-- <div class="calciButtonsSigns">
+              <div role="button" id="delBtn"><span>DEL</span></div>
+              <div role="button" before-content="OFF" id="calciOFFclearBtn">
+                <span>AC</span>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>

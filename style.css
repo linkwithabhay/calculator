@@ -168,9 +168,46 @@ body {
           align-items: center;
 }
 
-.calciButtonsNavigationCenterPart .col {
-  background-color: red;
-  width: 16px;
+.calciButtonsNavigationCenterPart {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c0bfd5;
+  border-radius: 200%;
+  -webkit-box-shadow: 3px 3px 6px black, -3px -3px 6px black;
+          box-shadow: 3px 3px 6px black, -3px -3px 6px black;
+}
+
+.calciButtonsNavigationCenterPartRow {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.calciButtonsNavigationCenterPartRow:nth-child(2) {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .calciButtonsNavigation [role="button"] {
@@ -202,4 +239,61 @@ body {
 
 .calciButtonsNavigation [role="button"] span {
   width: 100%;
+}
+
+.calciButtonsNumericAndSigns {
+  width: 100%;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.calciButtonsNumericAndSigns .Item {
+  width: 18%;
+  margin-bottom: 2rem;
+  padding: 0.2rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a9a9b3;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 8px black;
+          box-shadow: 3px 3px 8px black;
+  cursor: pointer;
+}
+
+.calciButtonsNumericAndSigns .Item:active {
+  -webkit-box-shadow: 1px 1px 4px black;
+          box-shadow: 1px 1px 4px black;
+}
+
+.calciButtonsNumericAndSigns .Item span {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+[before-content] {
+  position: relative;
+}
+
+[before-content]::before {
+  content: attr(before-content);
+  color: gold;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
 }
